@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif";
+	margin: 0;
+	color: white;
+}
+
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+#home {
+	height: 100vh;
+	background-image: url(adventure-bay-beach-307008.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#headerColumn {
+	height: 100px;
+	background-color: rgba(0,0,0,0.70);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo {
+	height: 80px;
+	width: 120px;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigationLink {
+	color: white;
+	padding: 8px;
+	margin: 0px 10px;
+}
+
+.navigationLink:hover {
+	text-decoration: underline;
+}
+
+#centerBlock {
+	height: 200px;
+	width: 60%;
+	background-color: rgba(0,0,0,0.70);
+	align-self: center;
+	margin-top: 23vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#headline {
+	margin: 35px 0px 0px;
+}
+
+#secondline {
+	margin: 10px 0px 15px;
+	font-weight: 200;
+}
+
+#actionCall {
+	width: 120px;
+	height: 33px;
+	border: solid white 1px;
+	border-radius: 10px;
+	background-color: rgb(165, 128, 16);
+}
+
+#actionCall:hover {
+	background-color: rgba(175,135,16,1.00);
+}
+
+#actionCall:active{
+	background-color: rgba(120,93,11,1.00);
+	border: solid white 2px;
+}
+
+#buttonText {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: 100;
+}
+
+#section2 {
+	height: auto;
+	background-color: black;
+	padding: 40px 0px;
+}
+
+.circleHolder {
+	display: flex;
+	justify-content: space-around;
+	padding: 30px 50px;
+}
+
+.circle {
+	height: 175px;
+	width: 175px;
+	background-position: center;
+	background-size: cover;
+	border-radius: 88px;
+}
+
+.shadow {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.00);
+	color: rgba(255,255,255,0.00);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.shadow:hover {
+	background-color: rgba(0,0,0,0.70);
+	color: rgba(255,255,255,1.00);
+}
+
+#circle1 {
+	background-image: url(pexels-photo-886465.jpg);
+}
+
+#circle2 {
+	background-image: url(pexels-photo-92870.jpg);
+}
+
+#circle3 {
+	background-image: url(pexels-photo-949223.jpg);
+}
+
+#circle4 {
+	background-image: url(pexels-photo-1157557.jpg);
+}
+
+#circle5 {
+	background-image: url(eiffel-tower-paris-france-tower-161853.jpg);
+}
+
+#circle6 {
+	background-image: url(pexels-photo.jpg);
+}
+
+#circle7 {
+	background-image: url(pexels-photo-861339.jpg);
+}
+
+#circle8 {
+	background-image: url(pexels-photo-396735.jpg);
+}
+
+#paragraphSection {
+	height: auto;
+	background-image: url(hiker-hiking-man-2967.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 90px;
+}
+
+#paragraphHeader {
+	margin: 0;
+	color: rgb(165, 128, 16);
+	padding: 0px 0px 20px;
+	font-size: 25px;
+}
+
+#paragraph {
+	margin: 0;
+	padding: 30px 0px 50px;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+#paragraphLink {
+	color: white;
+	background-color: rgba(165, 128, 16, 0.70);
+	width: 390px;
+	padding: 20px 0px 20px 150px;
+	margin-left: -90px;
+	font-size: 30px;
+	border-bottom-right-radius: 29px;
+	border-top-right-radius: 29px;
+}
+
+#paragraphLink:hover {
+	text-decoration: underline;
+}
+
+#separator {
+	height: 10px;
+	background-color: rgb(165, 128, 16);
+}
+
+#footer {
+	height: auto;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 9%;
+}
+
+@media (max-width: 947px) {
+	
+	#centerBlock {
+		width: auto;
+		padding: 0px 20px;
+	}
+	
+	#section2 {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.circle, .shadow{
+		margin: 10px 0px;
+	}
+	
+	.shadow {
+		margin: 0px 0px 40px 0px;
+	}
+	
+	.circleHolder {
+		flex-direction: column;
+	}
+	
+	#paragraphLink {
+		margin-left: 0px;
+		width: 100%;
+		border-radius: 0;
+		padding: 20px 0px;
+		text-align: center;
+	}
+	
+	.navigationLink {
+		font-size: 12px;
+		margin: 0px 5px;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	
+	#headerColumn {
+		flex-direction: column-reverse;
+		padding: 20px 0px;
+		justify-content: space-around;
+		height: auto;
+		margin: 0;
+	}
+	
+	#navLinks {
+		margin-bottom: 20px;
+	}
+	
+	#centerBlock {
+		
+	}
+	
+	#headline {
+		margin-top: 15px;
+		text-align: center;
+	}
+	
+	.circleHolder {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+	}
+	
+	.shadow {
+		margin: 0;
+		padding: 0;
+		background-color: rgba(0,0,0,0.70);
+		color: rgba(255,255,255,1.00);
+	}
+	
+	.circle {
+		margin: 10px 0px;
+		padding: 0;
+		height: 150px;
+		width: 150px;
+	}
+	
+	#navLinks {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	
+	.navigationLink {
+		margin: 0px;
+	}
+	
+	#centerBlock {
+		height: auto;
+		padding-bottom: 10px;
+	}
+	
+	#paragraphSection {
+		padding: 20px;
+	}
+	
+	#paragraphHeader {
+		text-align: center;
+		padding: 0px;
+		font-size: 20px;
+	}
+	
+	#paragraph {
+		padding: 40px 0px;
+		font-size: 14px;
+	}
+	
+	#footer {
+		flex-wrap: wrap;
+	}
+	
+	#footerLogo {
+		margin-bottom: 10px;
+	}
+}
